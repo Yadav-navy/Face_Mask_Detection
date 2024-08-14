@@ -26,21 +26,27 @@ st.markdown(
     """
     <style>
     .main {
-        background-color: #f4978e;
+        background-color: #82a8cd ;
+    }
+    .title {
+        font-family: 'Times New Roman', serif; 
+        color: black;
+        text-align: center;
+        font-size: 3em; 
     }
     </style>
     """,
+
     unsafe_allow_html=True
 )
 
 st.markdown(
-    "<h1 style='text-align: center; color: black; text-decoration: underline'>Face Mask Detection</h1>",
+    "<h1 class='title'>Face Mask Detection</h1>",
     unsafe_allow_html=True
 )
-
 # Centered and bold text
 st.markdown(
-    "<h4 style='color: black; text-align: center; font-weight: bold;'>Upload an image to check if the person is wearing a face mask or not.</h4>",
+    "<h5 style='color: #000080; text-align: center; font-weight: bold;'>Upload an image to check if the person is wearing a face mask or not</h5>",
     unsafe_allow_html=True
 )
 
