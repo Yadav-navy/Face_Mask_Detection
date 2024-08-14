@@ -26,18 +26,21 @@ st.markdown(
     """
     <style>
     .main {
-        background-color: #f8f1cd;
+        background-color: #cfead9;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.title('Face Mask Detection')
+st.markdown(
+    "<h1 style='text-align: center; color: black; text-decoration: underline'>Face Mask Detection</h1>",
+    unsafe_allow_html=True
+)
 
 # Centered and bold text
 st.markdown(
-    "<h4 style='text-align: center; font-weight: bold;'>Upload an image to check if the person is wearing a face mask or not.</h4>",
+    "<h4 style='color: black; text-align: center; font-weight: bold;'>Upload an image to check if the person is wearing a face mask or not.</h4>",
     unsafe_allow_html=True
 )
 
@@ -66,10 +69,10 @@ if uploaded_image is not None:
 
     # Display probabilities with h5 heading and bold
     st.markdown(
-        f"<h5 style='font-weight: bold;'>Chance of wearing a mask: {probabilities[1]:.2f}</h5>",
+        f"<h5 style='color: black; font-weight: bold;'>Chance of wearing a mask: {probabilities[1]:.2f}</h5>",
         unsafe_allow_html=True
     )
     st.markdown(
-        f"<h5 style='font-weight: bold;'>Chance of not wearing a mask: {probabilities[0]:.2f}</h5>",
+        f"<h5 style='color: black; font-weight: bold;'>Chance of not wearing a mask: {probabilities[0]:.2f}</h5>",
         unsafe_allow_html=True
     )
