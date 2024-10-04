@@ -29,7 +29,7 @@ st.markdown(
         background-color: #82a8cd ;
     }
     .title {
-        font-family: 'Times New Roman', serif; 
+        
         color: black;
         text-align: center;
         font-size: 3em; 
@@ -41,7 +41,7 @@ st.markdown(
 )
 
 st.markdown(
-    "<h1 class='title'>Face Mask Detection</h1>",
+    "<h1 class='title'>Mask Vision</h1>",
     unsafe_allow_html=True
 )
 # Centered and bold text
